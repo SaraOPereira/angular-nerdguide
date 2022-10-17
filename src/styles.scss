@@ -1,1 +1,91 @@
-/* You can add global styles to this file, and also import other style files */
+// @import "./../node_modules/bootstrap/scss/_functions.scss";
+// @import "./../node_modules/bootstrap/scss/_variables.scss";
+// @import "./../node_modules/bootstrap/scss/_mixins.scss";
+// @import "./../node_modules/bootstrap/scss/_utilities.scss";
+// @import "./../node_modules/bootstrap/scss/_helpers.scss";
+// @import "./../node_modules/bootstrap/scss/_root.scss";
+// @import "./../node_modules/bootstrap/scss/_type.scss";
+// @import "./../node_modules/bootstrap/scss/_images.scss";
+// @import "./../node_modules/bootstrap/scss/_containers.scss";
+// @import "./../node_modules/bootstrap/scss/_grid.scss";
+@import "./../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+body{
+    font-family: 'Comic Neue', cursive;
+}
+
+header{
+    background-color: #920B0B;
+    p.logo{
+        padding: 10px 0;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 32px;
+        margin: 0;
+        color: #fff;
+    }
+    .col-md-10{
+        position: relative;
+    }
+    ul.nav{
+        display: inline-flex;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        li a{
+            display: inline-flex;
+            background: #4E0000;
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            text-decoration: none;
+            width: 75px;
+            margin-left: 22px;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            transition: ease-in-out all 0.3s;
+            &:hover{
+                background-color: #fff;
+                color: #4E0000;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+footer{
+    background: #920B0B;
+    padding: 50px 0;
+    h2{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 15px;
+        color: #fff;
+    }
+    p, a{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        margin: 0;
+        color: #fff;
+        &.right{
+            text-align: right;
+        }
+    }
+}
+
+@media(min-width: 768px){
+    header{
+        button.nav-button{
+            display: none;
+        }
+    }
+}

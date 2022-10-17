@@ -1,0 +1,109 @@
+#banner{
+    position: relative;
+    img.img-banner{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .bg-black-custom{
+        background: rgba(64, 64, 64, 0.7);
+        padding: 50px 0;
+        margin: 125px 0;
+        h2{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 41px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        form{
+            .form-group{
+                position: relative;
+                input{
+                    background: #FFFFFF;
+                    border-radius: 15px;
+                    display: block;
+                    width: 100%;
+                    height: 45px;
+                    color: #434343;
+                    font-size: 16px;
+                }
+                button{
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 15px;
+                    background: transparent;
+                    border: 0;
+                }
+            }
+        }
+    }
+}
+#best{
+    margin: 100px 0;
+    h2{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 37px;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 54px;
+    }
+    .character{
+        background: #920B0B;
+        border-radius: 15px;
+        img{
+            border-radius: 15px 0 0 15px;
+        }
+        h3{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            color: #FFFCFC;
+            margin-bottom: 15px;
+        }
+        p{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            text-align: center;
+            color: #FFFCFC;
+            margin-bottom: 15px;
+        }
+        a.see-more{
+            background: #300000;
+            border-radius: 5px;
+            display: inline-block;
+            padding: 10px;
+            text-align: center;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            color: #fff;
+            text-decoration: none;
+            margin: auto;
+        }
+        .col-md-6:nth-child(2){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .content{
+                text-align: center;
+            }
+        }
+    }
+}
