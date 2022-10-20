@@ -96,6 +96,12 @@
             color: #fff;
             text-decoration: none;
             margin: auto;
+            transition: ease-in-out all 0.3s;
+            &:hover{
+                background-color: #fff;
+                color: #300000;
+                font-weight: 700;
+            }
         }
         .col-md-6:nth-child(2){
             display: flex;
