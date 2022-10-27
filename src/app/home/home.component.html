@@ -1,5 +1,5 @@
 <section id="banner">
-    <img src="/assets/images/banner-desktop.jpg" alt="Banner Desktop" class="img-banner img-fluid">
+    <img src="./assets/images/banner-desktop.jpg" alt="Banner Desktop" class="img-banner img-fluid">
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
@@ -7,7 +7,7 @@
                     <div class="row">
                         <div class="col-md-8 offset-md-2">
                             <h2>Find your favorite hero or villain here and see all about him!</h2>
-                            <form action="" method="post">
+                            <form>
                                 <div class="form-group">
                                     <input type="text" name="character" id="character" class="form-control" placeholder="Search...">
                                     <button type="submit" class="btn-submit">
@@ -32,7 +32,7 @@
                         <div class="character">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <img src="{{ charOne.image.url }}" alt="Character 1" class="img-fluid">
+                                    <img src="{{ charOne.image.url }}" alt="{{ charOne.name }}" class="img-fluid">
                                 </div>
                                 <div class="col-md-6">
                                     <div class="content">
@@ -50,7 +50,7 @@
                         <div class="character">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <img src="{{ charTwo.image.url }}" alt="Character 1" class="img-fluid">
+                                    <img src="{{ charTwo.image.url }}" alt="{{ charTwo.name }}" class="img-fluid">
                                 </div>
                                 <div class="col-md-6">
                                     <div class="content">
