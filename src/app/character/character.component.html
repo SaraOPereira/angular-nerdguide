@@ -1,2 +1,49 @@
-<p>character works!</p>
-<p>{{ character | json }}</p>
+<section id="character">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>{{ character.name }}</h2>
+            </div>
+            <div class="col-md-4">
+                <img src="{{ character.image.url }}" alt="{{ character.name }}" class="img-fluid">
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Powerstats</h3>
+                        <p><b>Intelligence:</b> {{ character.powerstats['intelligence'] }}</p>
+                        <p><b>Strength:</b> {{ character.powerstats['strength'] }}</p>
+                        <p><b>Speed:</b> {{ character.powerstats['speed'] }}</p>
+                        <p><b>Durability:</b> {{ character.powerstats['durability'] }}</p>
+                        <p><b>Power:</b> {{ character.powerstats['power'] }}</p>
+                        <p><b>Combat:</b> {{ character.powerstats['combat'] }}</p>
+                        <h3>Appearance</h3>
+                        <p><b>Gender:</b> {{ character.appearance['gender'] }}</p>
+                        <p><b>Race:</b> {{ character.appearance['race'] }}</p>
+                        <p><b>Height:</b> {{ character.appearance['height'] }}</p>
+                        <p><b>Weight:</b> {{ character.appearance['weight'] }}</p>
+                        <p><b>Eye color:</b> {{ character.appearance['eye-color'] }}</p>
+                        <p><b>Hair color:</b> {{ character.appearance['hair-color'] }}</p>
+                        <h3>Work</h3>
+                        <p><b>Occupation:</b> {{ character.work['occupation'] }}</p>
+                        <p><b>Base:</b> {{ character.work['base'] }}</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Biography</h3>
+                        <p><b>Full name:</b> {{ character.biography['full-name'] }}</p>
+                        <p><b>Alter egos:</b> {{ character.biography['alter-egos'] }}</p>
+                        <p><b>Aliases:</b> {{ character.biography['aliases'] }}</p>
+                        <p><b>Place of birth:</b> {{ character.biography['place-of-birth'] }}</p>
+                        <p><b>First appearance:</b> {{ character.biography['first-appearance'] }}</p>
+                        <p><b>Publisher:</b> {{ character.biography['publisher'] }}</p>
+                        <p><b>Alignment:</b> {{ character.biography['alignment'] }}</p>
+                        <h3>Connections</h3>
+                        <p><b>Group affiliation:</b> {{ character.connections['group-affiliation'] }}</p>
+                        <p><b>Relatives:</b> {{ character.connections['relatives'] }}</p>
+                    </div>
+                </div>
+                <a routerLink="/characters" class="btnComeback">See All Characters</a>
+            </div>
+        </div>
+    </div>
+</section>

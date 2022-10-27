@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,11 @@ export class HomeComponent implements OnInit {
 
   charOne: any; charTwo: any;
 
-  constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient,
+    private route: ActivatedRoute,
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
     this.http.get('https://www.superheroapi.com/api.php/' + this.token + '/70').subscribe(
@@ -23,4 +28,7 @@ export class HomeComponent implements OnInit {
     );
   }
 
+  searchCharacter(): void {
+    this.router.navigate(['/items'], { relativeTo: this.route});
+  }
 }
